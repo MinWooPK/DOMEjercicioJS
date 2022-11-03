@@ -55,7 +55,7 @@
 //     if (pie.innerText == '') {                             
 //          pie.innerText = img.alt;
 //     }
-//      else {                                                  //Se crea el Else , en la que si la condicion anterior no se cumple, se printa nada(borrar)
+//      else {                                                
 //          pie.innerText = '';
 //      }
 // }
@@ -77,7 +77,7 @@
 
 
 //     ------------------- FALTA POR TERMINAR , NO HAY UPDATE POR EL MOMENTO----------
-    
+
 // ===================================== Ejercicio 4 ==================================
 
 // El script que tienes que crear en la página modelo debe cambiar la clase del elemento que contiene al encabezado de la página. 
@@ -88,12 +88,32 @@
 
 //     let modificacion = document.getElementById('titular');
 //     modificacion.classList.toggle('activo')
-//     console.log(toggle())
-    
-    
+
 //     }
 
 // ===================================== Ejercicio 5 ==================================
+// Escribe el código de una función nuevoBloque() que deberá crear un nuevo elemento div, con una class de nombre destacar.
+//  El bloque contendrá, en negrita, el texto Página Modelo. Este bloque debe aparecer justo antes del bloque subtitulo es decir justo después del titular de la página.
+//   Se activará con el botón superior que contiene el texto Subtitulo
+// La función se llamara intercalar()
+
+function intercalar() {
+
+    let nuevoDiv = document.createElement("div");
+    nuevoDiv.innerText = "HELLO WORLD";
+    nuevoDiv.classList.add("destacar");
+    contenidoNuevoDiv = document.getElementById('titular');
+    contenidoNuevoDiv.appendChild(nuevoDiv);
+    nuevoDiv.insertAdjacentElement("afterend",contenidoNuevoDiv);
+}
+
+
+
+
+
+
+
+
 // ===================================== Ejercicio 5 ==================================
 // ===================================== Ejercicio 6 ==================================
 // ===================================== Ejercicio 6 ==================================
